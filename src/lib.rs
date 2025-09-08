@@ -56,7 +56,7 @@ pub fn print_stats_analysis(text: &str) {
             eng_freq_diff
         );
     }
-}my
+}
 
 pub fn decrypt(text: &str, shift: u8) -> String {
     let mut result = String::new();
