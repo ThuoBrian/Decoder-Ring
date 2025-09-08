@@ -18,10 +18,21 @@ A Rust-based Caesar cipher decryption tool that uses **frequency analysis** to c
 
 ---
 
-## 🛠️ Usage
+## 🖥️ Command Line Usage
 
-### Clone and Run
+This project uses [`clap`](https://docs.rs/clap) to provide a CLI interface.
+
+### Run with Cargo
 ```bash
-git clone https://github.com/your-username/caesar-decryptor.git
-cd caesar-decryptor
-cargo run
+cargo run -- --message "Uifsf jt b tfdsfu dpef!" --stats
+cargo run -- --message "Uifsf jt b tfdsfu dpef!" --guess
+
+-m, --message <MESSAGE>   The message to decrypt
+-s, --stats               Show statistical frequency analysis of the message
+-g, --guess               Attempt to guess the Caesar cipher shift automatically
+
+# Show stats for encrypted text
+cargo run -- --message "Uifsf jt b tfdsfu dpef!" --stats
+
+# Guess the shift and decrypt automatically
+cargo run -- --message "Uifsf jt b tfdsfu dpef!" --guess
