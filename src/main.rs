@@ -33,6 +33,6 @@ fn main() {
             "Best shift: {} (out of {}), score: {}",
             best_shift, depth, max_score
         );
-        println!("\nDecrypted message: {}", decrypted);
+        println!("\n Decrypted message: {} \n", decrypted);
     }
 }
